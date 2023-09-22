@@ -84,18 +84,15 @@ if(@$_POST['user_id'] && @$_POST['server_id'] != NULL){
             
             }else{
                 $json = array("status" => "error_1");
-                print_r($json);
-                echo ($json);
+             
             }
         }else{
           $json = array("status" => "error_1");
-          print_r($json);
-                echo ($json);
+     
         }
     }else{
         $json = array("status" => "error_server");
-        print_r($json);
-                echo ($json);
+   
     }
     echo json_encode($json);
 }

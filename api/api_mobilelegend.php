@@ -99,4 +99,6 @@ if(@$_POST['user_id'] && @$_POST['server_id'] != NULL){
     }
     echo json_encode($json);
 }
+
+echo "dinotro";
 ?>

@@ -81,9 +81,10 @@ if(@$_POST['user_id'] && @$_POST['server_id'] != NULL){
                                 "nama" => urldecode($character),
                                 "id" => $target_id
                                );
-            print_r($json);
+            
             }else{
                 $json = array("status" => "error_1");
+                print_r($json);
             }
         }else{
           $json = array("status" => "error_1");
